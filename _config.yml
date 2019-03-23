@@ -62,8 +62,8 @@ kramdown:
 # Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
-  clientID: 936d165be0e9f0e55156                            #生成的clientID
-  clientSecret: ce98b6bad37758608e1fd37a8055bf31a1f639a0    #生成的clientSecret
+  clientID: 82b34176bfb91b89d088                            #生成的clientID
+  clientSecret: 5b78a46ccf4ab48a4c3519035a67aec4a53a4143    #生成的clientSecret
   repo: MurasameFan.github.io    #仓库名称
   owner: MurasameFan    #github用户名
   admin: MurasameFan
