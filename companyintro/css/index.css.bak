@@ -1,0 +1,126 @@
+
+*{margin:0px; padding:0px;list-style-type:none;text-decoration:none; border:0px;font-family:"微软雅黑";}
+/*头部样式*/
+#Top{width:100%;height:30px;background:#000;position:fixed;top:0;z-index:3;}
+#Top .TopCon{width:1150px; height:30px;  margin:0px auto;/*水平距中*/}
+#Top .TopCon .search{/*width:230px;*/ width:0px;height:30px;float:right;position:relative;/*相对定位*/ overflow:hidden;/*超出部分隐藏*//*display:none;直接隐藏是错的*/}
+#Top .TopCon a{width:30px;height:16px; float:right; font-size:12px;
+					color:#e3e3e3; text-decoration:none; padding:8px 0px 0px 20px;}
+#Top .TopCon a:hover{color:#fff;}
+#Top .TopCon img.seaImg{float:right; padding-top:8px; }
+#Top .TopCon .search input.seaTxt{width:230px;height:20px;line-height:20px; background:#fff; border:0px;
+					border-radius:5px;/*圆角半径*/ position:absolute;/*绝对定位*/ left:0px; top:5px; text-indent:30px;}
+
+#Top .TopCon .search input.seaBut{width:30px;height:20px; background:url("../images/search2.gif") no-repeat center; border:0px; position:absolute; left:0px; top:5px;}
+#Top .TopCon .search label.txt{position:absolute; font-size:12px; left:35px; top:8px; color:#c1c1c1;}
+
+/*banner样式*/
+.banner{width:100%;height:130px; background:#000; text-align:center; }
+.banner a{ width:245px;height:100px; display:block; margin:0px auto; padding-top:30px;}
+
+
+/*导航样式*/
+#nav-top{width:100%;height:50px;background:#000;padding-bottom:35px;}
+#nav-top ul{width:960px;height:100%;margin:0 auto;}
+#nav-top ul li{float:left;width:16.1%;height:50px;
+	line-height:50px;text-align:center;position:relative;border-right:1px solid #fff;}
+#nav-top ul .shouye{border-left:1px solid #fff;}
+#nav-top ul li a{display:block;width:100%;height:100%;color:#fff;}
+#nav-top ul li .menu{width:100%;height:150px;position:absolute;display:none;z-index:1;}
+#nav-top ul li.first .menu{width:100%;height:200px;position:absolute;display:none;z-index:1;}
+#nav-top ul li .menu li{width:100%;height:50px;background:#000;border:0px;opacity:0.7;}
+#nav-top ul li .menu li a{display:block;width:100%;height:100%;text-align:center;color:#fff;}
+#nav-top ul li .menu li:hover{background:#666;}
+
+
+
+
+
+/*头部动画样式*/
+
+.flash{width:100%;height:500px; margin:0px auto;/*水平距中*/overflow:hidden;}
+.flash .scroll{width:750px;height:500px; background:red; margin:0px auto; position:relative;}
+.flash .scroll .prev{z-index:333;width:500px;height:500px; background:rgba(0,0,0,0.7); position:absolute; top:0px;left:-500px;}
+.flash .scroll .prev img{position:absolute; top:220px; right:20px;}
+.flash .scroll .next{z-index:333;width:500px;height:500px; background:rgba(0,0,0,0.7); position:absolute; top:0px;right:-500px;}
+.flash .scroll .next img{position:absolute; left:20px; top:220px;}
+.flash .imgList{width:2000%; height:500px;position:absolute; left:-750px;}
+.flash .imgList img{float:left;}
+.srcollBut{width:210px;height:30px; position:absolute; bottom:20px; left:40%;}
+.srcollBut ul li{width:10px;height:10px; background:#000;border:1px solid #fff; float:left; border-radius:5px;
+				margin:0px 5px;}
+.srcollBut ul li.hover{background:#fff;}
+
+
+
+
+
+
+
+
+
+/*第一部分样式*/
+.rongqi{width:100%;background:#333;padding-top:30px;padding-bottom:50px;}
+#Part1{width:1600px;  margin:0px auto; height:720px;  overflow:hidden;background:#333;}
+#Part1 .part1_middle{width:100%;height:720px;}
+
+
+
+
+/*第一部分，中间样式*/
+
+#Part1 .part1_middle .container{width:100%;height:100%;margin:0 auto;}
+#Part1 .part1_middle .container h3{height:40px;color:#fff; font-size:18px; font-family:"微软雅黑"; 
+font-weight:100;margin-top:13px;text-indent:45px;}
+#Part1 .part1_middle .container h3 span{color:#fff; font-family:"Times New Roman";}
+
+
+#Part1 .part1_middle .container figure{position:relative;overflow:hidden;width:29%;height:300px;
+float:left;margin-top:30px;margin-left:50px;}
+
+#Part1 .part1_middle .container figure a img{opacity:0.8;transition:all 0.5s;}
+#Part1 .part1_middle .container figure figcaption{position:absolute;top:0px;left:0px;color:#fff;font-family:"微软雅黑";
+	text-align:center;}
+figure figcaption p,h2,span,div{transition:all 0.5s;/*添加动画效果*/}
+
+/*开始效果*/
+.info1 figcaption{width:100%;height:100%;
+}/*注意父容器的宽度*/
+
+.info1 figcaption div{
+	border:2px solid #fff;width:80%;height:80%;
+	position:absolute;top:10%;left:10%;
+	transform:scale(1.2,1.2);opacity:0;
+}
+.info1 figcaption h2{margin-top:15%;margin-left:15%;transform:scale(1,1);opacity:0;}
+.info1 figcaption p{margin-top:5px;margin-left:15%;transform:scale(1,1);opacity:0;}
+.info1:hover a{cursor:pointer;}
+.info1:hover figcaption div{transform:scale(1,1);opacity:1;}
+.info1:hover img{opacity:0.7;transform:scale(1.1,1.1);}
+.info1:hover figcaption h2{transform:scale(0.9,0.9);opacity:1;}
+.info1:hover figcaption p{transform:scale(0.9,0.9);opacity:1;}
+
+
+
+
+/*第二部分样式*/
+#Part2{width:100%;height:270px;background-color:gray;
+color:#fff;padding-top:100px;position:relative;}
+#Part2 h2{height:50px;width:100%;margin:0 auto;text-align:center;font-weight:normal;}
+#Part2 p{height:50px;width:100%;margin:0 auto;font-family:"Times New Roman";text-align:center;
+font-size:30px;line-height:30px;letter-spacing:2px;}
+#Part2 a{display:block;float:left;position:absolute;border-radius:50%;
+width:95px;height:80px;padding-top:15px;
+}
+
+
+.sina{left:38%;transition:all 1s;}
+.qq{left:48%;transition:all 1s;}
+.weichat{left:58%;transition:all 1s;}
+.sina:hover{background:#e62226;}
+.weichat:hover{background:#6dd526;}
+.qq:hover{background:#fecc2f;}
+
+
+
+
